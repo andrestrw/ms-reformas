@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MS Reformas | Reformas y asistencia en el hogar</title>
+  <meta name="description" content="MS Reformas: reformas integrales, cocinas, baños, pintura, electricidad, fontanería y mantenimiento del hogar. Pide tu presupuesto sin compromiso." />
+  <link rel="icon" type="image/png" href="assets/img/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+
+  <!-- ================= HEADER ================= -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="index.html#inicio" class="header__logo" aria-label="MS Reformas – Inicio">
+        <img src="assets/img/logo.png" alt="MS Reformas" />
+      </a>
+      <nav class="nav" id="nav">
+        <a href="index.html#inicio" class="nav__link">Inicio</a>
+        <a href="index.html#nosotros" class="nav__link">Nosotros</a>
+        <a href="index.html#servicios" class="nav__link">Servicios</a>
+        <a href="index.html#proyectos" class="nav__link">Proyectos</a>
+        <a href="index.html#contacto" class="nav__link">Contacto</a>
+        <a href="index.html#contacto" class="btn btn--outline nav__cta-mobile">Presupuesto</a>
+      </nav>
+      <a href="index.html#contacto" class="btn btn--outline header__cta">Presupuesto</a>
+      <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ================= HERO ================= -->
+    <section class="hero" id="inicio">
+      <div class="hero__slides">
+        <div class="hero__slide is-active" style="background-image:url('assets/img/hero-1.jpg')"></div>
+        <div class="hero__slide" style="background-image:url('assets/img/hero-2.jpg')"></div>
+        <div class="hero__slide" style="background-image:url('assets/img/hero-3.jpg')"></div>
+      </div>
+      <div class="hero__overlay"></div>
+
+      <div class="container hero__content">
+        <span class="badge hero__badge"><i></i>MS Reformas · Reformas y asistencia en el hogar</span>
+        <h1 class="hero__title">Reformas integrales –<br />Diseño y <span class="text-grad">Ejecución</span></h1>
+        <span class="hero__line"></span>
+        <p class="hero__eyebrow">Calidad, plazos y presupuesto cerrado</p>
+        <p class="hero__glass">Cocinas, baños, pintura, electricidad, fontanería y mantenimiento del hogar.</p>
+        <a href="#contacto" class="btn btn--outline hero__btn">Contáctanos</a>
+      </div>
+
+      <div class="hero__dots" id="heroDots"></div>
+      <div class="hero__arrows">
+        <button class="circle-btn" id="heroPrev" aria-label="Anterior">
+          <svg viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6"/></svg>
+        </button>
+        <button class="circle-btn" id="heroNext" aria-label="Siguiente">
+          <svg viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></svg>
+        </button>
+      </div>
+    </section>
+
+    <!-- ================= SOBRE NOSOTROS ================= -->
+    <section class="section about" id="nosotros">
+      <div class="container about__grid">
+        <div class="about__text">
+          <span class="badge reveal"><i></i>Nosotros</span>
+          <h2 class="section__title reveal">Sobre <span class="text-soft">Nosotros</span></h2>
+          <span class="section__bar reveal"></span>
+          <p class="reveal">
+            <strong>MS REFORMAS</strong> es una empresa dedicada a las reformas y la asistencia en el hogar,
+            especializada en reformas integrales de viviendas, cocinas, baños y locales.
+          </p>
+          <p class="reveal">
+            Te acompañamos y gestionamos cada etapa del proyecto: desde la primera visita y el presupuesto,
+            el diseño y la elección de materiales, hasta la ejecución de la obra y la limpieza final,
+            acompañando a nuestros clientes durante todo el proceso para garantizar una experiencia
+            cómoda, transparente y sin sorpresas.
+          </p>
+
+          <div class="stats">
+            <div class="stat reveal">
+              <div class="stat__num"><span data-count="15">0</span><small>+</small></div>
+              <span class="stat__bar"></span>
+              <p><b>Años</b>de experiencia en el sector</p>
+            </div>
+            <div class="stat reveal">
+              <div class="stat__num"><span data-count="100">0</span><small>%</small></div>
+              <span class="stat__bar"></span>
+              <p><b>Servicio</b>integral</p>
+            </div>
+            <div class="stat reveal">
+              <div class="stat__num"><span data-count="1">0</span><small>:1</small></div>
+              <span class="stat__bar"></span>
+              <p><b>Asesoramiento</b>y atención personalizada</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="about__media reveal">
+          <img src="assets/img/about.jpg" alt="Cocina reformada por MS Reformas" loading="lazy" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PROYECTOS ================= -->
+    <section class="section" id="proyectos">
+      <div class="container">
+        <span class="badge reveal"><i></i>Proyectos</span>
+        <h2 class="section__title reveal">Proyectos <span class="text-soft">Realizados</span></h2>
+        <span class="section__bar reveal"></span>
+        <div class="projects" id="projectsGrid"></div>
+      </div>
+    </section>
+
+    <!-- ================= OBRAS (GALERÍA) ================= -->
+    <section class="section" id="obras">
+      <div class="container container--narrow">
+        <span class="badge reveal"><i></i>Galería</span>
+        <h2 class="section__title reveal">Obras</h2>
+        <span class="section__bar reveal"></span>
+
+        <div class="carousel reveal" id="galleryCarousel">
+          <div class="carousel__track"></div>
+          <button class="circle-btn carousel__prev" aria-label="Anterior">
+            <svg viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6"/></svg>
+          </button>
+          <button class="circle-btn carousel__next" aria-label="Siguiente">
+            <svg viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></svg>
+          </button>
+        </div>
+        <div class="carousel__dots" id="galleryDots"></div>
+      </div>
+    </section>
+
+    <!-- ================= SERVICIOS ================= -->
+    <section class="section" id="servicios">
+      <div class="container container--narrow">
+        <span class="badge reveal"><i></i>Servicios</span>
+        <h2 class="section__title reveal">Nuestros <span class="text-soft">Servicios</span></h2>
+        <span class="section__bar reveal"></span>
+
+        <div class="services">
+          <article class="service reveal">
+            <div class="service__head">
+              <span class="service__num">01</span>
+              <svg class="service__icon" viewBox="0 0 24 24"><path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25z"/><path d="M14.06 6.19l3.75 3.75 2.13-2.13a1 1 0 000-1.41l-2.34-2.34a1 1 0 00-1.41 0l-2.13 2.13z"/></svg>
+            </div>
+            <h3>Proyecto y presupuesto</h3>
+            <p>Visitamos tu vivienda, escuchamos tus necesidades y diseñamos la reforma a medida, considerando
+              presupuesto, estilo y materiales. Te entregamos un presupuesto detallado y cerrado.</p>
+          </article>
+          <article class="service reveal">
+            <div class="service__head">
+              <span class="service__num">02</span>
+              <svg class="service__icon" viewBox="0 0 24 24"><path d="M12 3a7 7 0 00-7 7v3H3v3h18v-3h-2v-3a7 7 0 00-7-7zm-1 2.08V10h2V5.08A5 5 0 0117 10v3H7v-3a5 5 0 014-4.92zM2 18h20v2H2z"/></svg>
+            </div>
+            <h3>Ejecución de obra</h3>
+            <p>Nos encargamos de TODO: albañilería, fontanería, electricidad, pladur, carpintería y pintura.
+              Desde la demolición hasta el último detalle.</p>
+          </article>
+          <article class="service reveal">
+            <div class="service__head">
+              <span class="service__num">03</span>
+              <svg class="service__icon" viewBox="0 0 24 24"><path d="M7 14a3 3 0 110-6 3 3 0 010 6zm5.65-4A6 6 0 101 11a6 6 0 0011.65 2H17v3h3v-3h2v-3H12.65z"/></svg>
+            </div>
+            <h3>Transparencia</h3>
+            <p>Trabajamos con un sistema de contratación claro y predecible, con plazos definidos y forma de
+              pago según el avance de la obra.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= TESTIMONIOS ================= -->
+    <section class="section" id="testimonios">
+      <div class="container">
+        <span class="badge reveal"><i></i>Opiniones</span>
+        <h2 class="section__title reveal">Lo que dicen <span class="text-soft">nuestros clientes</span></h2>
+        <span class="section__bar reveal"></span>
+
+        <div class="testimonials">
+          <article class="testimonial reveal">
+            <div class="testimonial__head"><b>Juan</b><span class="stars">★★★★★</span></div>
+            <p>"Después de tanto buscar, encontramos una empresa que nos transmitió seguridad y nos brindó la mejor relación calidad/precio."</p>
+            <span class="testimonial__line"></span>
+          </article>
+          <article class="testimonial reveal">
+            <div class="testimonial__head"><b>Laura</b><span class="stars">★★★★★</span></div>
+            <p>"Reformaron la cocina y el baño en el plazo acordado. Siempre tuvieron la mejor predisposición y respuestas claras."</p>
+            <span class="testimonial__line"></span>
+          </article>
+          <article class="testimonial reveal">
+            <div class="testimonial__head"><b>Miguel</b><span class="stars">★★★★★</span></div>
+            <p>"Propuesta clara y seria. El resultado: una casa nueva para disfrutar con familia y amigos."</p>
+            <span class="testimonial__line"></span>
+          </article>
+          <article class="testimonial reveal">
+            <div class="testimonial__head"><b>Carolina</b><span class="stars">★★★★★</span></div>
+            <p>"Excelente seguimiento y terminaciones. Cumplieron plazos y superaron nuestras expectativas."</p>
+            <span class="testimonial__line"></span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CONTACTO ================= -->
+    <section class="section" id="contacto">
+      <div class="container container--narrow">
+        <span class="badge reveal"><i></i>Contacto</span>
+        <h2 class="section__title reveal">Cuéntanos tu <span class="text-soft">proyecto</span></h2>
+        <span class="section__bar reveal"></span>
+
+        <div class="contact">
+          <aside class="contact__card reveal">
+            <h3>¿Prefieres escribirnos directo?</h3>
+            <p class="muted">Abre el chat de WhatsApp y hablamos ahora mismo.</p>
+            <a href="#" class="btn btn--wa" data-wa-link target="_blank" rel="noopener">
+              Abrir chat ahora
+              <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <ul class="checks">
+              <li><b>Atención personalizada</b><span>Un asesor te responde.</span></li>
+              <li><b>Respuesta en el día</b><span>Horario de lunes a viernes de 9 a 18 h.</span></li>
+              <li><b>Presupuesto sin compromiso</b><span>Nos cuentas y te guiamos.</span></li>
+            </ul>
+            <p class="contact__note">También puedes completar el formulario y te respondemos por WhatsApp con los detalles.</p>
+          </aside>
+
+          <form class="contact__form reveal" id="contactForm" novalidate>
+            <div class="form-grid">
+              <div class="field">
+                <input type="text" id="fNombre" name="nombre" placeholder=" " required />
+                <label for="fNombre">Nombre</label>
+              </div>
+              <div class="field">
+                <input type="text" id="fApellido" name="apellido" placeholder=" " />
+                <label for="fApellido">Apellido</label>
+              </div>
+              <div class="field">
+                <input type="email" id="fEmail" name="email" placeholder=" " />
+                <label for="fEmail">Email (opcional)</label>
+              </div>
+              <div class="field">
+                <input type="text" id="fZona" name="zona" placeholder=" " />
+                <label for="fZona">¿Qué quieres reformar?</label>
+              </div>
+              <div class="field field--full">
+                <textarea id="fMensaje" name="mensaje" rows="4" placeholder=" " required></textarea>
+                <label for="fMensaje">Cuéntanos cómo podemos ayudarte</label>
+              </div>
+            </div>
+            <div class="form-foot">
+              <div class="form-foot__info">
+                <p>Al enviar, se abrirá WhatsApp con tu consulta precompletada.</p>
+                <p>Destino: <a href="#" data-wa-link data-wa-text target="_blank" rel="noopener"></a></p>
+              </div>
+              <button type="submit" class="btn btn--solid">
+                Enviar por WhatsApp
+                <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+              </button>
+            </div>
+            <p class="form-error" id="formError" role="alert"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <img src="assets/img/logo.png" alt="MS Reformas" />
+        <p>Reformas y asistencia en el hogar. Calidad, compromiso y atención personalizada en cada obra.</p>
+      </div>
+      <div>
+        <h4>Navegación</h4>
+        <ul>
+          <li><a href="index.html#inicio">Inicio</a></li>
+          <li><a href="index.html#nosotros">Nosotros</a></li>
+          <li><a href="index.html#servicios">Servicios</a></li>
+          <li><a href="index.html#proyectos">Proyectos</a></li>
+          <li><a href="index.html#contacto">Contacto</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <ul class="footer__contact">
+          <li><svg viewBox="0 0 24 24"><path d="M6.6 10.8a15.1 15.1 0 006.6 6.6l2.2-2.2a1 1 0 011-.25 11.4 11.4 0 003.6.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.57a1 1 0 01-.25 1z"/></svg><a href="#" data-phone></a></li>
+          <li><svg viewBox="0 0 24 24"><path d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm0 4l-8 5-8-5V6l8 5 8-5z"/></svg><a href="#" data-email></a></li>
+          <li><svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 00-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 00-7-7zm0 9.5A2.5 2.5 0 1112 6.5a2.5 2.5 0 010 5z"/></svg><span data-location></span></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Redes</h4>
+        <div class="socials">
+          <a href="#" data-instagram aria-label="Instagram" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24"><path d="M12 7a5 5 0 100 10 5 5 0 000-10zm0 8.2a3.2 3.2 0 110-6.4 3.2 3.2 0 010 6.4zM17.3 5.5a1.2 1.2 0 100 2.4 1.2 1.2 0 000-2.4zM21.9 7.1c-.1-1.6-.4-3-1.6-4.2S17.7 1.3 16.1 1.2C14.4 1.1 9.6 1.1 7.9 1.2 6.3 1.3 4.9 1.6 3.7 2.8S2.1 5.5 2 7.1c-.1 1.7-.1 6.5 0 8.2.1 1.6.4 3 1.6 4.2s2.6 1.5 4.2 1.6c1.7.1 6.5.1 8.2 0 1.6-.1 3-.4 4.2-1.6s1.5-2.6 1.6-4.2c.1-1.7.1-6.5 0-8.2zM19.8 17.6a3.3 3.3 0 01-1.9 1.9c-1.3.5-4.4.4-5.9.4s-4.6.1-5.9-.4a3.3 3.3 0 01-1.9-1.9c-.5-1.3-.4-4.4-.4-5.9s-.1-4.6.4-5.9a3.3 3.3 0 011.9-1.9c1.3-.5 4.4-.4 5.9-.4s4.6-.1 5.9.4a3.3 3.3 0 011.9 1.9c.5 1.3.4 4.4.4 5.9s.1 4.6-.4 5.9z"/></svg>
+          </a>
+          <a href="#" data-facebook aria-label="Facebook" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24"><path d="M14 8V6.5c0-.7.5-1 1-1h2V2h-3c-3 0-4 2-4 4.5V8H8v3.5h2V22h4V11.5h2.7L17 8h-3z"/></svg>
+          </a>
+          <a href="#" data-wa-link aria-label="WhatsApp" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 00-8.6 15.1L2 22l5-1.3A10 10 0 1012 2zm0 18.2a8.2 8.2 0 01-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1112 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.6.8-.8 1-.3.2-.5.1a6.7 6.7 0 01-3.3-2.9c-.3-.4.3-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 00-.7.3 3 3 0 00-.9 2.2 5.2 5.2 0 001.1 2.7 11.8 11.8 0 004.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 001.7-1.2 2.2 2.2 0 00.2-1.2c-.1-.1-.3-.2-.5-.3z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <p>© <span id="year"></span> MS Reformas. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
